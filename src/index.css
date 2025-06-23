@@ -3,6 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Import modern fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
 /* Cyberpunk Design System */
 @layer base {
   :root {
@@ -45,10 +48,15 @@
     @apply bg-background text-foreground;
     background: linear-gradient(135deg, #0a0a0f 0%, #1a1a2e 50%, #16213e 100%);
     overflow-x: hidden;
+    font-family: 'Inter', 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
   }
 
   html {
     scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
   }
 }
 
@@ -178,3 +186,13 @@
   height: 100%;
   z-index: -1;
 }
+
+/* Custom size classes for profile picture */
+.w-54 { width: 13.5rem; }
+.h-54 { height: 13.5rem; }
+.w-58 { width: 14.5rem; }
+.h-58 { height: 14.5rem; }
+.w-62 { width: 15.5rem; }
+.h-62 { height: 15.5rem; }
+.w-66 { width: 16.5rem; }
+.h-66 { height: 16.5rem; }
