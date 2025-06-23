@@ -78,7 +78,7 @@ export const Hero = () => {
           className="mb-8 flex justify-center"
         >
           <div className="relative">
-            <div className="w-54 h-54 md:w-62 md:h-62 rounded-full overflow-hidden border-4 border-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 p-1 glow-effect">
+            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 p-1 glow-effect">
               <img
                 src="https://i.postimg.cc/TYy7qXrL/IMG-0460.png"
                 alt="Ravikumar"
@@ -87,7 +87,7 @@ export const Hero = () => {
             </div>
             {/* Floating rings around profile */}
             <motion.div
-              className="absolute inset-0 w-54 h-54 md:w-62 md:h-62 border-2 border-cyan-400 rounded-full opacity-30"
+              className="absolute inset-0 w-32 h-32 md:w-40 md:h-40 border-2 border-cyan-400 rounded-full opacity-30"
               animate={{
                 rotate: 360
               }}
@@ -98,7 +98,7 @@ export const Hero = () => {
               }}
             />
             <motion.div
-              className="absolute inset-0 w-60 h-60 md:w-68 md:h-68 -top-3 -left-3 border border-purple-400 rounded-full opacity-20"
+              className="absolute inset-0 w-36 h-36 md:w-44 md:h-44 -top-2 -left-2 border border-purple-400 rounded-full opacity-20"
               animate={{
                 rotate: -360
               }}
@@ -133,7 +133,7 @@ export const Hero = () => {
             </span>
           </h1>
           <h2 className="text-2xl md:text-4xl text-gray-300 mb-8">
-            Frontend Developer
+            Frontend Developer & UI/UX Designer
           </h2>
         </motion.div>
 
