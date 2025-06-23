@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { Mail, Phone, Github, Linkedin } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
@@ -38,20 +38,6 @@ export const Contact = () => {
       value: "+91 94889 44410",
       href: "tel:+919488944410",
       color: "from-cyan-600 to-blue-600"
-    },
-    {
-      icon: Github,
-      label: "GitHub",
-      value: "Whitedevil2004r27",
-      href: "https://github.com/Whitedevil2004r27",
-      color: "from-gray-600 to-gray-800"
-    },
-    {
-      icon: Linkedin,
-      label: "LinkedIn",
-      value: "ravi-kumar-j-b29467276",
-      href: "https://www.linkedin.com/in/ravi-kumar-j-b29467276",
-      color: "from-blue-600 to-blue-800"
     }
   ];
 
@@ -90,8 +76,6 @@ export const Contact = () => {
                   <motion.a
                     key={contact.label}
                     href={contact.href}
-                    target={contact.href.startsWith('http') ? '_blank' : undefined}
-                    rel={contact.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}

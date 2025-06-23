@@ -1,16 +1,31 @@
 
 import { motion } from "framer-motion";
-import { Github, Linkedin, Mail, Heart } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export const Footer = () => {
   const socialLinks = [
-    { icon: Github, href: "#", label: "GitHub" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
-    { icon: Mail, href: "mailto:ravikumar@example.com", label: "Email" }
+    { 
+      icon: Github, 
+      href: "https://github.com/Whitedevil2004r27", 
+      label: "GitHub",
+      color: "hover:text-gray-300" 
+    },
+    { 
+      icon: Linkedin, 
+      href: "https://www.linkedin.com/in/ravi-kumar-j-b29467276", 
+      label: "LinkedIn",
+      color: "hover:text-blue-400" 
+    },
+    { 
+      icon: Mail, 
+      href: "mailto:ravikumarofficial227@gmail.com", 
+      label: "Email",
+      color: "hover:text-cyan-400" 
+    }
   ];
 
   return (
-    <footer className="py-12 px-6 border-t border-purple-500/20">
+    <footer className="footer-icons py-12 px-6 border-t border-purple-500/20">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -24,12 +39,14 @@ export const Footer = () => {
               <motion.a
                 key={link.label}
                 href={link.href}
+                target={link.href.startsWith('http') ? '_blank' : undefined}
+                rel={link.href.startsWith('http') ? 'noopener noreferrer' : undefined}
                 initial={{ opacity: 0, scale: 0 }}
                 whileInView={{ opacity: 1, scale: 1 }}
                 transition={{ duration: 0.5, delay: index * 0.1 }}
                 viewport={{ once: true }}
-                whileHover={{ scale: 1.2, rotate: 360 }}
-                className="p-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-full text-white hover:shadow-lg hover:shadow-purple-500/50 transition-all duration-300"
+                whileHover={{ scale: 1.2 }}
+                className={`text-gray-400 text-2xl transition-all duration-300 ${link.color} transform hover:scale-110`}
                 aria-label={link.label}
               >
                 <link.icon className="w-6 h-6" />
@@ -44,11 +61,8 @@ export const Footer = () => {
             viewport={{ once: true }}
             className="text-gray-400"
           >
-            <p className="text-lg mb-2">
+            <p className="text-lg">
               © 2024 Ravikumar. All rights reserved.
-            </p>
-            <p className="flex items-center justify-center gap-2 text-sm">
-              Made with <Heart className="w-4 h-4 text-red-500 animate-pulse" /> and lots of caffeine
             </p>
           </motion.div>
         </motion.div>
