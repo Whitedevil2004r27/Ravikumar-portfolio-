@@ -1,4 +1,3 @@
-
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { ChevronDown } from "lucide-react";
@@ -80,7 +79,7 @@ export const Hero = () => {
           <div className="relative">
             <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 p-1 glow-effect">
               <img
-                src="https://i.postimg.cc/TYy7qXrL/IMG-0460.png"
+                src="/images/profile-pic.png"
                 alt="Ravikumar"
                 className="w-full h-full object-cover rounded-full"
               />
