@@ -137,7 +137,7 @@ export const Hero = () => {
           className="cyber-button px-8 py-4 text-xl font-semibold rounded-lg glow-effect"
         >
           View Portfolio
-        </button>
+        </motion.button>
 
         <motion.div
           initial={{
