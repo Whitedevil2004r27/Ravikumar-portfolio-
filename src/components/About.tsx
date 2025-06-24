@@ -54,8 +54,12 @@ export const About = () => {
               className="absolute -inset-8 rounded-full border border-purple-500 opacity-20"
             />
             <div className="relative w-80 h-80 bg-gradient-to-br from-purple-900 via-blue-900 to-pink-900 rounded-full flex items-center justify-center cyber-card float-animation">
-              <div className="w-64 h-64 bg-gradient-to-br from-cyan-400 to-purple-600 rounded-full flex items-center justify-center text-6xl font-bold text-white shadow-lg">
-                RK
+              <div className="w-64 h-64 rounded-full overflow-hidden flex items-center justify-center shadow-lg border-4 border-transparent bg-gradient-to-r from-cyan-400 to-purple-600 p-1">
+                <img 
+                  src="/images/profile-pic.png" 
+                  alt="Ravikumar" 
+                  className="w-full h-full object-cover rounded-full"
+                />
               </div>
             </div>
           </div>
