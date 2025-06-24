@@ -79,7 +79,7 @@ export const Hero = () => {
         >
           <div className="profile-pic w-[150px] h-[150px] rounded-full overflow-hidden shadow-[0_0_12px_rgba(255,255,255,0.15)]">
             <img
-              src="https://i.postimg.cc/TYy7qXrL/IMG-0460.png"
+              src="https://i.postimg.cc/prBk2xdc/profile-pic.png"
               alt="Ravikumar"
               className="w-full h-full object-cover"
             />
