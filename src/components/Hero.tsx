@@ -22,7 +22,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section id="hero" className="hero-section min-h-screen flex items-center justify-center relative overflow-hidden pt-[100px]">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         <motion.div
@@ -60,7 +60,7 @@ export const Hero = () => {
         />
       </div>
 
-      <div className="text-center z-10 max-w-4xl mx-auto px-6 flex flex-col items-center">
+      <div className="text-center z-10 max-w-4xl mx-auto px-6">
         {/* Profile Picture */}
         <motion.div
           initial={{
@@ -75,13 +75,38 @@ export const Hero = () => {
             duration: 0.8,
             ease: "easeOut"
           }}
-          className="mb-8 mt-[30px]"
+          className="mb-8 flex justify-center"
         >
-          <div className="profile-pic w-[150px] h-[150px] rounded-full overflow-hidden shadow-[0_0_12px_rgba(255,255,255,0.15)]">
-            <img
-              src="https://i.postimg.cc/prBk2xdc/profile-pic.png"
-              alt="Ravikumar"
-              className="w-full h-full object-cover"
+          <div className="relative">
+            <div className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-transparent bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 p-1 glow-effect">
+              <img
+                src="https://i.postimg.cc/TYy7qXrL/IMG-0460.png"
+                alt="Ravikumar"
+                className="w-full h-full object-cover rounded-full"
+              />
+            </div>
+            {/* Floating rings around profile */}
+            <motion.div
+              className="absolute inset-0 w-32 h-32 md:w-40 md:h-40 border-2 border-cyan-400 rounded-full opacity-30"
+              animate={{
+                rotate: 360
+              }}
+              transition={{
+                duration: 10,
+                repeat: Infinity,
+                ease: "linear"
+              }}
+            />
+            <motion.div
+              className="absolute inset-0 w-36 h-36 md:w-44 md:h-44 -top-2 -left-2 border border-purple-400 rounded-full opacity-20"
+              animate={{
+                rotate: -360
+              }}
+              transition={{
+                duration: 15,
+                repeat: Infinity,
+                ease: "linear"
+              }}
             />
           </div>
         </motion.div>
@@ -101,13 +126,34 @@ export const Hero = () => {
           }}
           className="mb-8"
         >
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white">
+          <h1 className="text-6xl md:text-8xl font-bold mb-6 neon-text">
             Hi, I'm{" "}
-            <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 bg-clip-text text-transparent">
+            <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 bg-clip-text font-bold text-slate-50 text-left">
               Ravikumar
             </span>
-            {" "}- Front-End Developer
           </h1>
+          <h2 className="text-2xl md:text-4xl text-gray-300 mb-8">
+            Frontend Developer & UI/UX Designer
+          </h2>
+        </motion.div>
+
+        <motion.div
+          initial={{
+            opacity: 0
+          }}
+          animate={{
+            opacity: 1
+          }}
+          transition={{
+            delay: 1.3,
+            duration: 1
+          }}
+          className="mb-12"
+        >
+          <div className="text-xl md:text-2xl text-cyan-400 font-mono min-h-[2rem]">
+            {typedText}
+            <span className="animate-pulse">|</span>
+          </div>
         </motion.div>
 
         <motion.button
@@ -120,7 +166,7 @@ export const Hero = () => {
             scale: 1
           }}
           transition={{
-            delay: 1.3,
+            delay: 2.3,
             duration: 0.5
           }}
           whileHover={{
@@ -147,7 +193,7 @@ export const Hero = () => {
             opacity: 1
           }}
           transition={{
-            delay: 2.3,
+            delay: 3.3,
             duration: 1
           }}
           className="absolute bottom-10 left-1/2 transform -translate-x-1/2"

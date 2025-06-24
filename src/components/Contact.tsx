@@ -1,6 +1,6 @@
 
 import { motion } from "framer-motion";
-import { Mail, Phone } from "lucide-react";
+import { Mail, MapPin, Phone } from "lucide-react";
 import { useState } from "react";
 import { toast } from "sonner";
 
@@ -24,25 +24,8 @@ export const Contact = () => {
     });
   };
 
-  const contactMethods = [
-    {
-      icon: Mail,
-      label: "Email",
-      value: "ravikumarofficial227@gmail.com",
-      href: "mailto:ravikumarofficial227@gmail.com",
-      color: "from-purple-600 to-pink-600"
-    },
-    {
-      icon: Phone,
-      label: "Phone",
-      value: "+91 94889 44410",
-      href: "tel:+919488944410",
-      color: "from-cyan-600 to-blue-600"
-    }
-  ];
-
   return (
-    <section id="contact" className="min-h-screen py-20 px-6">
+    <section className="min-h-screen py-20 px-6">
       <div className="max-w-6xl mx-auto">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -52,7 +35,7 @@ export const Contact = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold mb-6 neon-text">
-            Get in Touch
+            Let's Connect
           </h2>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto">
             Ready to bring your ideas to life? Let's create something amazing together
@@ -68,30 +51,39 @@ export const Contact = () => {
           >
             <div className="cyber-card p-8 rounded-xl">
               <h3 className="text-2xl font-bold mb-8 text-cyan-400">
-                Contact Information
+                Get In Touch
               </h3>
               
               <div className="space-y-6">
-                {contactMethods.map((contact, index) => (
-                  <motion.a
-                    key={contact.label}
-                    href={contact.href}
-                    initial={{ opacity: 0, x: -20 }}
-                    whileInView={{ opacity: 1, x: 0 }}
-                    transition={{ duration: 0.5, delay: index * 0.1 }}
-                    viewport={{ once: true }}
-                    whileHover={{ scale: 1.02, x: 10 }}
-                    className="flex items-center space-x-4 p-4 rounded-lg bg-gray-900/30 hover:bg-gray-800/50 transition-all duration-300 border border-purple-500/20 hover:border-cyan-500/40"
-                  >
-                    <div className={`p-3 bg-gradient-to-r ${contact.color} rounded-lg glow-effect`}>
-                      <contact.icon className="w-6 h-6" />
-                    </div>
-                    <div>
-                      <p className="text-gray-400 text-sm">{contact.label}</p>
-                      <p className="text-lg text-white font-medium">{contact.value}</p>
-                    </div>
-                  </motion.a>
-                ))}
+                <div className="flex items-center space-x-4">
+                  <div className="p-3 bg-gradient-to-r from-purple-600 to-pink-600 rounded-lg">
+                    <Mail className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-gray-400">Email</p>
+                    <p className="text-lg text-white">ravikumar@example.com</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center space-x-4">
+                  <div className="p-3 bg-gradient-to-r from-cyan-600 to-blue-600 rounded-lg">
+                    <Phone className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-gray-400">Phone</p>
+                    <p className="text-lg text-white">+91 12345 67890</p>
+                  </div>
+                </div>
+                
+                <div className="flex items-center space-x-4">
+                  <div className="p-3 bg-gradient-to-r from-green-600 to-teal-600 rounded-lg">
+                    <MapPin className="w-6 h-6" />
+                  </div>
+                  <div>
+                    <p className="text-gray-400">Location</p>
+                    <p className="text-lg text-white">Ulundurpet, Tamil Nadu</p>
+                  </div>
+                </div>
               </div>
             </div>
           </motion.div>
@@ -103,9 +95,6 @@ export const Contact = () => {
             viewport={{ once: true }}
           >
             <form onSubmit={handleSubmit} className="cyber-card p-8 rounded-xl">
-              <h3 className="text-2xl font-bold mb-6 text-purple-400">
-                Send a Message
-              </h3>
               <div className="space-y-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-400 mb-2">
