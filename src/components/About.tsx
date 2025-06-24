@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 export const About = () => {
   return (
-    <section className="min-h-screen flex items-center py-20 px-6">
+    <section id="about" className="min-h-screen flex items-center py-20 px-6">
       <div className="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -17,20 +17,20 @@ export const About = () => {
           </h2>
           <div className="cyber-card p-8 rounded-xl">
             <p className="text-lg md:text-xl leading-relaxed text-gray-300 mb-6">
-              I'm a passionate frontend developer from{" "}
-              <span className="text-cyan-400 font-semibold">Ulundurpet</span> with a{" "}
-              <span className="text-purple-400 font-semibold">B.Tech in IT</span> from Sri Shakthi Institute of Engineering and Technology.
+              Hi, I'm Ravikumar — a{" "}
+              <span className="text-cyan-400 font-semibold">Front-End Developer</span> who finds purpose in crafting smooth, visually compelling, and interactive web experiences.
             </p>
             <p className="text-lg md:text-xl leading-relaxed text-gray-300 mb-6">
-              I craft immersive user experiences using modern tools like{" "}
-              <span className="text-pink-400 font-semibold">React.js, Next.js, and Figma</span>. 
-              I love building clean, interactive interfaces that blend usability with creativity.
+              My journey started with curiosity about how websites work, and today, I use modern tools like{" "}
+              <span className="text-pink-400 font-semibold">React and Next.js</span> to bring ideas to life on the web.
+            </p>
+            <p className="text-lg md:text-xl leading-relaxed text-gray-300 mb-6">
+              As a graduate in{" "}
+              <span className="text-purple-400 font-semibold">IT from Sri Shakthi Institute of Engineering and Technology</span>, I've built a solid foundation in tech and design.
             </p>
             <p className="text-lg md:text-xl leading-relaxed text-gray-300">
-              My passion lies in creating{" "}
-              <span className="text-cyan-400 font-semibold">visually stunning</span> and{" "}
-              <span className="text-purple-400 font-semibold">functionally robust</span> web experiences 
-              that push the boundaries of what's possible on the web.
+              I'm driven by{" "}
+              <span className="text-cyan-400 font-semibold">creativity, collaboration, and a love for continuous learning</span>.
             </p>
           </div>
         </motion.div>

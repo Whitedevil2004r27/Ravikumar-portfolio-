@@ -21,7 +21,7 @@ export const Hero = () => {
   }, []);
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="hero" className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
       {/* Animated Background Elements */}
       <div className="absolute inset-0">
         <motion.div
@@ -127,12 +127,12 @@ export const Hero = () => {
         >
           <h1 className="text-6xl md:text-8xl font-bold mb-6 neon-text">
             Hi, I'm{" "}
-            <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 bg-clip-text font-bold text-slate-50 text-left">
+            <span className="bg-gradient-to-r from-pink-500 via-purple-500 to-cyan-500 bg-clip-text text-transparent font-bold">
               Ravikumar
             </span>
           </h1>
           <h2 className="text-2xl md:text-4xl text-gray-300 mb-8">
-            Frontend Developer & UI/UX Designer
+            Front-End Developer
           </h2>
         </motion.div>
 
