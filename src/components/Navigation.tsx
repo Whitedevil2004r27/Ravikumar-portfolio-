@@ -57,7 +57,7 @@ export const Navigation = () => {
     >
       {/* Logo Image */}
       <img
-        src="/public/rk logo.png"
+        src="/images/rk logo.png"
         alt="Logo"
         className="w-15 h-10 rounded-xl shadow-md"
       />
