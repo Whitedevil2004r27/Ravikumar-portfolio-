@@ -3,13 +3,13 @@ import { motion } from "framer-motion";
 
 const skills = [
   { name: "React.js", level: 95, color: "from-blue-400 to-blue-600" },
-  { name: "Next.js", level: 90, color: "from-gray-400 to-gray-600" },
-  { name: "JavaScript", level: 92, color: "from-yellow-400 to-yellow-600" },
+  { name: "Next.js", level: 95, color: "from-gray-400 to-gray-600" },
+  { name: "JavaScript", level: 90, color: "from-yellow-400 to-yellow-600" },
   { name: "TypeScript", level: 85, color: "from-blue-500 to-blue-700" },
   { name: "CSS/Tailwind", level: 94, color: "from-cyan-400 to-cyan-600" },
-  { name: "UI/UX Design", level: 88, color: "from-purple-400 to-purple-600" },
-  { name: "Three.js", level: 80, color: "from-green-400 to-green-600" },
-  { name: "Figma", level: 87, color: "from-pink-400 to-pink-600" }
+  { name: "UI/UX Design", level: 55, color: "from-purple-400 to-purple-600" },
+  { name: "Three.js", level: 50, color: "from-green-400 to-green-600" },
+ 
 ];
 
 export const Skills = () => {
