@@ -64,7 +64,7 @@ export const Navigation = () => {
       
       {/* Gradient Text */}
       <span className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-500 bg-clip-text text-transparent">
-        RK's | NeoFolio
+        RK's | NeoFolio 3D
       </span>
     </motion.div>
           
